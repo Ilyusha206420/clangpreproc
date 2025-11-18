@@ -21,6 +21,10 @@ PocketNode* PNinit(char *key, char *val)
   return out;
 } 
 
+PocketNode* HTPfind(char *key) 
+{
+}
+
 HashTable HTinit() 
 {
   HashTable out = {{[0 ... 1023] = {NULL, NULL}}, 1024};
@@ -38,6 +42,11 @@ void HTadd(HashTable *ht, char *key, char *val)
     ht->table[addr].begin = PNinit(key, val);
     ht->table[addr].end = ht->table[addr].begin;
   }
+}
+
+void HTdelete(HashTable *ht, char *key)
+{
+  
 }
 
 char* HTget(HashTable *ht, char *key)
