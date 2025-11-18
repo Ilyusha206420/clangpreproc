@@ -21,8 +21,10 @@ PocketNode* PNinit(char *key, char *val)
   return out;
 } 
 
-PocketNode* HTPfind(char *key) 
+PocketNode* HTPfind(HTPocket *htp, char *key) 
 {
+  PocketNode *pn = htp->begin;
+  return pn;
 }
 
 HashTable HTinit() 
