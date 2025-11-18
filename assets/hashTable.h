@@ -24,4 +24,5 @@ HashTable HTinit();
 //! void HTfree(HashTable *ht);
 
 void HTadd(HashTable *ht, char *key, char *val);
+void HTdelete(HashTable *ht, char *key);
 char* HTget(HashTable *ht, char *key);
